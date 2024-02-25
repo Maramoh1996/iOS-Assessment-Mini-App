@@ -66,7 +66,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 23)
         label.textAlignment = .left
-        label.text = "Hello, \(String(describing: userName)))"
+        label.text = "Hello, \(String(describing: userName))"
         
         let listButton = UIButton.init(frame: CGRect.init(x: 300, y: 40, width: 110, height: 30))
         listButton.setTitleColor(.purple, for: .normal)
