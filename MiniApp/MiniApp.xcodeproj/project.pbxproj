@@ -18,6 +18,8 @@
 		B658AF892B8625890050F1F5 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658AF872B8625890050F1F5 /* Entity+CoreDataClass.swift */; };
 		B658AF8A2B8625890050F1F5 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658AF882B8625890050F1F5 /* Entity+CoreDataProperties.swift */; };
 		B6C184F52B8CD98C00091BAE /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6C184F32B8CD98C00091BAE /* CoreDataModel.xcdatamodeld */; };
+		B6C184FB2B8E28A600091BAE /* TitleWithButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */; };
+		B6C185092B8E2A0900091BAE /* TitleWithButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */; };
 		B6D73ECC2B828C63001D633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECB2B828C63001D633F /* AppDelegate.swift */; };
 		B6D73ECE2B828C63001D633F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECD2B828C63001D633F /* SceneDelegate.swift */; };
 		B6D73ED02B828C63001D633F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECF2B828C63001D633F /* LoginViewController.swift */; };
@@ -60,6 +62,8 @@
 		B658AF872B8625890050F1F5 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B658AF882B8625890050F1F5 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B6C184F42B8CD98C00091BAE /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithButtonCell.swift; sourceTree = "<group>"; };
+		B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleWithButtonCell.xib; sourceTree = "<group>"; };
 		B6D73EC82B828C63001D633F /* MiniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D73ECB2B828C63001D633F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D73ECD2B828C63001D633F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		B6C184F92B8E287900091BAE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */,
+				B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B6D73EBF2B828C63001D633F = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +296,7 @@
 		B6DF58AB2B84938600379048 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				B6C184F92B8E287900091BAE /* Cells */,
 				B62070442B84D7F600D70CC2 /* ViewModel */,
 				B6DF58AD2B8493AE00379048 /* Controller */,
 				B6DF58AC2B84939D00379048 /* StoryBoard */,
@@ -415,6 +429,7 @@
 				B6D73ED32B828C63001D633F /* Main.storyboard in Resources */,
 				B62070582B84F39900D70CC2 /* UserInfoTableViewCell.xib in Resources */,
 				B62070362B84D38100D70CC2 /* UsersList.storyboard in Resources */,
+				B6C185092B8E2A0900091BAE /* TitleWithButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +465,7 @@
 				B62070402B84D5BD00D70CC2 /* GetUserListResponse.swift in Sources */,
 				B6D73ECE2B828C63001D633F /* SceneDelegate.swift in Sources */,
 				B658AF7D2B85F6F60050F1F5 /* EventProtocol.swift in Sources */,
+				B6C184FB2B8E28A600091BAE /* TitleWithButtonCell.swift in Sources */,
 				B658AF892B8625890050F1F5 /* Entity+CoreDataClass.swift in Sources */,
 				B6C184F52B8CD98C00091BAE /* CoreDataModel.xcdatamodeld in Sources */,
 				B62070462B84D81A00D70CC2 /* MainViewModel.swift in Sources */,

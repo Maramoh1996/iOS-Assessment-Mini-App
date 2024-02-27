@@ -38,6 +38,7 @@ class MainViewController: UIViewController {
         tableView?.separatorStyle = .none
         tableView?.contentInsetAdjustmentBehavior = .never
         tableView?.isScrollEnabled = false
+        tableView?.registerNibCellBundled(ofType: TitleWithButtonCell.self)
     }
 
 }
@@ -51,7 +52,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleWithButtonCell", for: indexPath) as! TitleWithButtonCell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
