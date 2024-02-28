@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class TitleWithButtonCell: UITableViewCell, URLSessionWebSocketDelegate, EventProtocol {
+class TitleWithButtonCell: UITableViewCell, EventProtocol {
     
     @IBOutlet weak var webSocketTitle: UILabel?
     @IBOutlet weak var connectButton: UIButton?
