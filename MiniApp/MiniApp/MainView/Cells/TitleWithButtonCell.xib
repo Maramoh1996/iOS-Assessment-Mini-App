@@ -11,35 +11,63 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" restorationIdentifier="TitleWithButtonCell" id="iN0-l3-epB" customClass="TitleWithButtonCell" customModule="MiniApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="537" height="381"/>
+            <rect key="frame" x="0.0" y="0.0" width="628" height="930"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Eb9-Im-5ZN">
-                    <rect key="frame" x="120" y="194" width="297" height="143"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="400" translatesAutoresizingMaskIntoConstraints="NO" id="Eb9-Im-5ZN">
+                    <rect key="frame" x="120" y="144" width="388" height="742"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMh-sw-3Rc">
-                            <rect key="frame" x="0.0" y="0.0" width="297" height="83"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O71-fT-s3d">
-                            <rect key="frame" x="0.0" y="93" width="297" height="50"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pAL-Mp-R5N">
+                            <rect key="frame" x="0.0" y="0.0" width="388" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMh-sw-3Rc">
+                                    <rect key="frame" x="0.0" y="0.0" width="388" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O71-fT-s3d">
+                                    <rect key="frame" x="0.0" y="50" width="388" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="UMd-eZ-VM7"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="connectButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="kCm-wl-TIX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="UMd-eZ-VM7"/>
+                                <constraint firstAttribute="height" constant="100" id="XC6-Zc-5jX"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <connections>
-                                <action selector="connectButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="kCm-wl-TIX"/>
-                            </connections>
-                        </button>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-ul-yeg">
+                            <rect key="frame" x="0.0" y="702" width="388" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qL3-N4-A3L">
+                                    <rect key="frame" x="0.0" y="0.0" width="362" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Ksq-Kt-ipX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQp-pv-oqd">
+                                    <rect key="frame" x="367" y="0.0" width="21" height="40"/>
+                                    <state key="normal" image="paperplane.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="sendButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="aOO-2k-yyk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Eb9-Im-5ZN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="150" id="6dc-fb-ibV"/>
+                <constraint firstItem="Eb9-Im-5ZN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="6dc-fb-ibV"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Eb9-Im-5ZN" secondAttribute="bottom" constant="10" id="QKT-gB-3TW"/>
                 <constraint firstItem="Eb9-Im-5ZN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="120" id="d3E-Q9-2DU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Eb9-Im-5ZN" secondAttribute="trailing" constant="120" id="pym-MZ-sMk"/>
@@ -47,12 +75,14 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="connectButton" destination="O71-fT-s3d" id="Ciz-xE-vIV"/>
+                <outlet property="inputTextField" destination="qL3-N4-A3L" id="ZHa-Qm-Kgd"/>
                 <outlet property="webSocketTitle" destination="AMh-sw-3Rc" id="he8-iA-7rW"/>
             </connections>
-            <point key="canvasLocation" x="18.115942028985508" y="-68.638392857142847"/>
+            <point key="canvasLocation" x="84.057971014492765" y="115.17857142857142"/>
         </view>
     </objects>
     <resources>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -8,12 +8,21 @@
 import Foundation
 import UIKit
 
-class TitleWithButtonCell: UITableViewCell {
+
+class TitleWithButtonCell: UITableViewCell, URLSessionWebSocketDelegate, EventProtocol {
     
     @IBOutlet weak var webSocketTitle: UILabel?
     @IBOutlet weak var connectButton: UIButton?
+    @IBOutlet weak var inputTextField: UITextField?
     
+    var webSocket = WebSocket()
     var isConnected: Bool = false
+    var textInput: String?
+    var eventBlock: ((Event) -> Void)?
+
+    enum Event {
+        case didMessageSent
+    }
     
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,9 +46,23 @@ class TitleWithButtonCell: UITableViewCell {
         if !isConnected {
             connectButton?.setTitle("Disconnect", for: .normal)
             isConnected.toggle()
+            webSocket.connectWebSocket()
         } else {
             connectButton?.setTitle("Connect", for: .normal)
             isConnected.toggle()
+            webSocket.closeSession()
         }
+    }
+    
+    @IBAction func sendButton(_ sender: Any) {
+        textInput = inputTextField?.text
+        let isWebSocketConnected =  webSocket.isWebSocketConnected
+        if isWebSocketConnected {
+            webSocket.send(message: textInput ?? "")
+            if let eventBlock = eventBlock {
+                eventBlock(.didMessageSent)
+            }
+        }
+        inputTextField?.text = ""
     }
 }

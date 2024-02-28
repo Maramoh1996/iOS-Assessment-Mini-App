@@ -20,6 +20,7 @@
 		B6C184F52B8CD98C00091BAE /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6C184F32B8CD98C00091BAE /* CoreDataModel.xcdatamodeld */; };
 		B6C184FB2B8E28A600091BAE /* TitleWithButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */; };
 		B6C185092B8E2A0900091BAE /* TitleWithButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */; };
+		B6C1850F2B8F6D1500091BAE /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C1850E2B8F6D1500091BAE /* WebSocket.swift */; };
 		B6D73ECC2B828C63001D633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECB2B828C63001D633F /* AppDelegate.swift */; };
 		B6D73ECE2B828C63001D633F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECD2B828C63001D633F /* SceneDelegate.swift */; };
 		B6D73ED02B828C63001D633F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECF2B828C63001D633F /* LoginViewController.swift */; };
@@ -64,6 +65,7 @@
 		B6C184F42B8CD98C00091BAE /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithButtonCell.swift; sourceTree = "<group>"; };
 		B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleWithButtonCell.xib; sourceTree = "<group>"; };
+		B6C1850E2B8F6D1500091BAE /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		B6D73EC82B828C63001D633F /* MiniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D73ECB2B828C63001D633F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D73ECD2B828C63001D633F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				B6DF58BB2B84947900379048 /* MainViewController.swift */,
+				B6C1850E2B8F6D1500091BAE /* WebSocket.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B658AF8A2B8625890050F1F5 /* Entity+CoreDataProperties.swift in Sources */,
+				B6C1850F2B8F6D1500091BAE /* WebSocket.swift in Sources */,
 				B6D73ED02B828C63001D633F /* LoginViewController.swift in Sources */,
 				B6D73ECC2B828C63001D633F /* AppDelegate.swift in Sources */,
 				B620704E2B84EEF600D70CC2 /* UsersListViewModel.swift in Sources */,
