@@ -111,7 +111,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func showAlertMessage(message: String) {
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Message Sent", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
