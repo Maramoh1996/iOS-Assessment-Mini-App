@@ -31,13 +31,13 @@ public class UserInfoTableViewCell: UITableViewCell {
         userStatusLabel?.font = UIFont.systemFont(ofSize: 10)
     }
     
-    func setupData(userResponse: UserListResponse) {
+    func setupData(userResponse: User) {
         userNameLabel?.text = userResponse.name
         userEmailLabel?.text = userResponse.email
         userStatusLabel?.text = userResponse.status
     }
     
-    func setupColors(userResponse: UserListResponse) -> UIColor {
+    func setupColors(userResponse: User) -> UIColor {
         return userResponse.status == "active" ? .green : .gray
     }
 }

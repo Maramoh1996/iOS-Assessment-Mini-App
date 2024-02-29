@@ -26,6 +26,21 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        configureBinding()
+    }
+    
+    func configureBinding() {
+        viewModel.onEvent { (event) in
+            switch event {
+            case .didSuccess:
+                DispatchQueue.main.async {
+                    self.usersListViewController = UsersListViewController.instanceFromStoryboard() as? UsersListViewController
+                    guard let usersListViewController = self.usersListViewController else { return }
+                    usersListViewController.getUserListResponse = self.viewModel.getUserListResponse
+                    self.navigationController?.pushViewController(usersListViewController, animated: true)
+                }
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -96,18 +111,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     @objc func showDetail(_ button:UIButton) {
         viewModel.getUsers()
-        viewModel.onEvent { (event) in
-            switch event {
-            case .didSuccess(let userListResponse):
-                self.viewModel.getUserListResponse = userListResponse
-                DispatchQueue.main.async {
-                    self.usersListViewController = UsersListViewController.instanceFromStoryboard() as? UsersListViewController
-                    guard let usersListViewController = self.usersListViewController else { return }
-                    usersListViewController.getUserListResponse = userListResponse
-                    self.navigationController?.pushViewController(usersListViewController, animated: true)
-                }
-            }
-        }
     }
     
     func showAlertMessage(message: String) {

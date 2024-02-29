@@ -14,7 +14,7 @@ class UsersListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
 
     var viewModel: MainViewModel?
-    var getUserListResponse: [UserListResponse]?
+    var getUserListResponse: [User]?
 
     
     class func instanceFromStoryboard() -> UIViewController? {

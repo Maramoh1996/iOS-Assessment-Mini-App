@@ -7,11 +7,11 @@
 
 import Foundation
 
-public struct UsersListResponse: Codable {
-    public var data: [UserListResponse]
+public struct GetUsersResponse: Codable {
+    public var data: [UserResponse]
 }
 
-public struct UserListResponse: Codable {
+public struct UserResponse: Codable {
     public var id: Int?
     public var name: String?
     public var email: String?

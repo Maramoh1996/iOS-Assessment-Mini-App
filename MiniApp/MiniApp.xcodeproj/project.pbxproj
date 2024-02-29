@@ -15,12 +15,13 @@
 		B62070532B84F21200D70CC2 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62070522B84F21200D70CC2 /* UserInfoTableViewCell.swift */; };
 		B62070582B84F39900D70CC2 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62070572B84F39900D70CC2 /* UserInfoTableViewCell.xib */; };
 		B658AF7D2B85F6F60050F1F5 /* EventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658AF7C2B85F6F50050F1F5 /* EventProtocol.swift */; };
-		B658AF892B8625890050F1F5 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658AF872B8625890050F1F5 /* Entity+CoreDataClass.swift */; };
-		B658AF8A2B8625890050F1F5 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658AF882B8625890050F1F5 /* Entity+CoreDataProperties.swift */; };
-		B6C184F52B8CD98C00091BAE /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6C184F32B8CD98C00091BAE /* CoreDataModel.xcdatamodeld */; };
+		B6C184F52B8CD98C00091BAE /* MiniApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6C184F32B8CD98C00091BAE /* MiniApp.xcdatamodeld */; };
 		B6C184FB2B8E28A600091BAE /* TitleWithButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */; };
 		B6C185092B8E2A0900091BAE /* TitleWithButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */; };
 		B6C1850F2B8F6D1500091BAE /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C1850E2B8F6D1500091BAE /* WebSocket.swift */; };
+		B6C185392B9087C500091BAE /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C185382B9087C500091BAE /* UserRepository.swift */; };
+		B6C185442B908E4700091BAE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C185432B908E4700091BAE /* CacheManager.swift */; };
+		B6C1855C2B90B83700091BAE /* UserMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C1855B2B90B83700091BAE /* UserMapping.swift */; };
 		B6D73ECC2B828C63001D633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECB2B828C63001D633F /* AppDelegate.swift */; };
 		B6D73ECE2B828C63001D633F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECD2B828C63001D633F /* SceneDelegate.swift */; };
 		B6D73ED02B828C63001D633F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73ECF2B828C63001D633F /* LoginViewController.swift */; };
@@ -29,7 +30,6 @@
 		B6D73EDB2B828C66001D633F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D73ED92B828C66001D633F /* LaunchScreen.storyboard */; };
 		B6D73EE62B828C67001D633F /* MiniAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73EE52B828C67001D633F /* MiniAppTests.swift */; };
 		B6D73EF12B828C67001D633F /* MiniAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73EF02B828C67001D633F /* MiniAppUITests.swift */; };
-		B6D73F192B833BB3001D633F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D73F182B833BB3001D633F /* LoginViewModel.swift */; };
 		B6DF58B72B8493FF00379048 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DF58B62B8493FF00379048 /* MainView.storyboard */; };
 		B6DF58BC2B84947900379048 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF58BB2B84947900379048 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,12 +60,13 @@
 		B62070522B84F21200D70CC2 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		B62070572B84F39900D70CC2 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
 		B658AF7C2B85F6F50050F1F5 /* EventProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProtocol.swift; sourceTree = "<group>"; };
-		B658AF872B8625890050F1F5 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B658AF882B8625890050F1F5 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B6C184F42B8CD98C00091BAE /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		B6C184FA2B8E28A600091BAE /* TitleWithButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithButtonCell.swift; sourceTree = "<group>"; };
 		B6C185082B8E2A0900091BAE /* TitleWithButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleWithButtonCell.xib; sourceTree = "<group>"; };
 		B6C1850E2B8F6D1500091BAE /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		B6C185382B9087C500091BAE /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		B6C185432B908E4700091BAE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		B6C1855B2B90B83700091BAE /* UserMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapping.swift; sourceTree = "<group>"; };
 		B6D73EC82B828C63001D633F /* MiniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D73ECB2B828C63001D633F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D73ECD2B828C63001D633F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		B6D73EEC2B828C67001D633F /* MiniAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D73EF02B828C67001D633F /* MiniAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppUITests.swift; sourceTree = "<group>"; };
 		B6D73EF22B828C67001D633F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6D73F182B833BB3001D633F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B6DF58B62B8493FF00379048 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		B6DF58BB2B84947900379048 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,10 +113,8 @@
 		B62070342B84CF1600D70CC2 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
-				B6C184B72B8B3A4200091BAE /* Cells */,
-				B6C184B32B8B39D200091BAE /* ViewController */,
+				B6C185672B90BC2200091BAE /* View */,
 				B6C184B22B8B39BE00091BAE /* ViewModel */,
-				B6C184B12B8B39AA00091BAE /* StoryBoard */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -145,12 +143,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		B6C184B32B8B39D200091BAE /* ViewController */ = {
+		B6C184B32B8B39D200091BAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				B620703A2B84D39700D70CC2 /* UsersListViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B6C184B42B8B39EA00091BAE /* Protocols */ = {
@@ -161,12 +159,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		B6C184B52B8B39FA00091BAE /* Entities */ = {
+		B6C184B52B8B39FA00091BAE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B6C1855A2B90B82100091BAE /* Mapping */,
 				B6C184B62B8B3A2400091BAE /* Response */,
+				B6C185142B90783C00091BAE /* Cache */,
 			);
-			path = Entities;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		B6C184B62B8B3A2400091BAE /* Response */ = {
@@ -195,12 +195,101 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		B6C185142B90783C00091BAE /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				B6C185432B908E4700091BAE /* CacheManager.swift */,
+				B6C184F32B8CD98C00091BAE /* MiniApp.xcdatamodeld */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		B6C1851B2B90788C00091BAE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1851D2B90790900091BAE /* Main */,
+				B6DF58AB2B84938600379048 /* HomeView */,
+				B62070342B84CF1600D70CC2 /* UserList */,
+				B6DF58AA2B84936400379048 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B6C1851C2B9078E800091BAE /* Reasources */ = {
+			isa = PBXGroup;
+			children = (
+				B6D73ED72B828C66001D633F /* Assets.xcassets */,
+				B6D73ED92B828C66001D633F /* LaunchScreen.storyboard */,
+				B6D73EDC2B828C66001D633F /* Info.plist */,
+			);
+			path = Reasources;
+			sourceTree = "<group>";
+		};
+		B6C1851D2B90790900091BAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B6D73ECB2B828C63001D633F /* AppDelegate.swift */,
+				B6D73ECD2B828C63001D633F /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B6C1851E2B90792C00091BAE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B6C185382B9087C500091BAE /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B6C1855A2B90B82100091BAE /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1855B2B90B83700091BAE /* UserMapping.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		B6C185662B90BB4A00091BAE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1850E2B8F6D1500091BAE /* WebSocket.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B6C185672B90BC2200091BAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6C184B32B8B39D200091BAE /* Controller */,
+				B6C184B72B8B3A4200091BAE /* Cells */,
+				B6C184B12B8B39AA00091BAE /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6C185682B90BC3F00091BAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6D73F012B828CEB001D633F /* Controller */,
+				B6D73F112B83382F001D633F /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6C1856F2B90BC5400091BAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6DF58AD2B8493AE00379048 /* Controller */,
+				B6DF58AC2B84939D00379048 /* StoryBoard */,
+				B6C184F92B8E287900091BAE /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6D73EBF2B828C63001D633F = {
 			isa = PBXGroup;
 			children = (
-				B6C184F32B8CD98C00091BAE /* CoreDataModel.xcdatamodeld */,
-				B658AF872B8625890050F1F5 /* Entity+CoreDataClass.swift */,
-				B658AF882B8625890050F1F5 /* Entity+CoreDataProperties.swift */,
 				B6D73ECA2B828C63001D633F /* MiniApp */,
 				B6D73EE42B828C67001D633F /* MiniAppTests */,
 				B6D73EEF2B828C67001D633F /* MiniAppUITests */,
@@ -221,16 +310,12 @@
 		B6D73ECA2B828C63001D633F /* MiniApp */ = {
 			isa = PBXGroup;
 			children = (
-				B6C184B52B8B39FA00091BAE /* Entities */,
+				B6C1851B2B90788C00091BAE /* Scenes */,
 				B6C184B42B8B39EA00091BAE /* Protocols */,
-				B62070342B84CF1600D70CC2 /* UserList */,
-				B6DF58AB2B84938600379048 /* MainView */,
-				B6DF58AA2B84936400379048 /* Login */,
-				B6D73ECB2B828C63001D633F /* AppDelegate.swift */,
-				B6D73ECD2B828C63001D633F /* SceneDelegate.swift */,
-				B6D73ED72B828C66001D633F /* Assets.xcassets */,
-				B6D73ED92B828C66001D633F /* LaunchScreen.storyboard */,
-				B6D73EDC2B828C66001D633F /* Info.plist */,
+				B6C184B52B8B39FA00091BAE /* Data */,
+				B6C1851E2B90792C00091BAE /* Repository */,
+				B6C185662B90BB4A00091BAE /* Networking */,
+				B6C1851C2B9078E800091BAE /* Reasources */,
 			);
 			path = MiniApp;
 			sourceTree = "<group>";
@@ -261,21 +346,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		B6D73F032B828D4E001D633F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				B6D73F182B833BB3001D633F /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B6D73F042B828D5F001D633F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		B6D73F112B83382F001D633F /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,23 +357,18 @@
 		B6DF58AA2B84936400379048 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B6D73F042B828D5F001D633F /* Model */,
-				B6D73F032B828D4E001D633F /* ViewModel */,
-				B6D73F112B83382F001D633F /* StoryBoard */,
-				B6D73F012B828CEB001D633F /* Controller */,
+				B6C185682B90BC3F00091BAE /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		B6DF58AB2B84938600379048 /* MainView */ = {
+		B6DF58AB2B84938600379048 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				B6C184F92B8E287900091BAE /* Cells */,
+				B6C1856F2B90BC5400091BAE /* View */,
 				B62070442B84D7F600D70CC2 /* ViewModel */,
-				B6DF58AD2B8493AE00379048 /* Controller */,
-				B6DF58AC2B84939D00379048 /* StoryBoard */,
 			);
-			path = MainView;
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		B6DF58AC2B84939D00379048 /* StoryBoard */ = {
@@ -318,7 +383,6 @@
 			isa = PBXGroup;
 			children = (
 				B6DF58BB2B84947900379048 /* MainViewController.swift */,
-				B6C1850E2B8F6D1500091BAE /* WebSocket.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -457,7 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B658AF8A2B8625890050F1F5 /* Entity+CoreDataProperties.swift in Sources */,
+				B6C1855C2B90B83700091BAE /* UserMapping.swift in Sources */,
 				B6C1850F2B8F6D1500091BAE /* WebSocket.swift in Sources */,
 				B6D73ED02B828C63001D633F /* LoginViewController.swift in Sources */,
 				B6D73ECC2B828C63001D633F /* AppDelegate.swift in Sources */,
@@ -465,13 +529,13 @@
 				B62070532B84F21200D70CC2 /* UserInfoTableViewCell.swift in Sources */,
 				B620703B2B84D39700D70CC2 /* UsersListViewController.swift in Sources */,
 				B6DF58BC2B84947900379048 /* MainViewController.swift in Sources */,
-				B6D73F192B833BB3001D633F /* LoginViewModel.swift in Sources */,
+				B6C185392B9087C500091BAE /* UserRepository.swift in Sources */,
 				B62070402B84D5BD00D70CC2 /* GetUserListResponse.swift in Sources */,
+				B6C185442B908E4700091BAE /* CacheManager.swift in Sources */,
 				B6D73ECE2B828C63001D633F /* SceneDelegate.swift in Sources */,
 				B658AF7D2B85F6F60050F1F5 /* EventProtocol.swift in Sources */,
 				B6C184FB2B8E28A600091BAE /* TitleWithButtonCell.swift in Sources */,
-				B658AF892B8625890050F1F5 /* Entity+CoreDataClass.swift in Sources */,
-				B6C184F52B8CD98C00091BAE /* CoreDataModel.xcdatamodeld in Sources */,
+				B6C184F52B8CD98C00091BAE /* MiniApp.xcdatamodeld in Sources */,
 				B62070462B84D81A00D70CC2 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +714,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G97539N6Y4;
-				INFOPLIST_FILE = MiniApp/Info.plist;
+				INFOPLIST_FILE = MiniApp/Reasources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -669,7 +733,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G97539N6Y4;
-				INFOPLIST_FILE = MiniApp/Info.plist;
+				INFOPLIST_FILE = MiniApp/Reasources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -803,13 +867,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B6C184F32B8CD98C00091BAE /* CoreDataModel.xcdatamodeld */ = {
+		B6C184F32B8CD98C00091BAE /* MiniApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				B6C184F42B8CD98C00091BAE /* CoreDataModel.xcdatamodel */,
 			);
 			currentVersion = B6C184F42B8CD98C00091BAE /* CoreDataModel.xcdatamodel */;
-			path = CoreDataModel.xcdatamodeld;
+			path = MiniApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
